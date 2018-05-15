@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ range first 10 .Data.Pages }}
+<article>
+  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  {{ .Summary }}
+  <a href="{{ .Permalink }}">Read the full article</a>
+</article>
+{{ end }}
+
+Muh!
+
+{{ end }}

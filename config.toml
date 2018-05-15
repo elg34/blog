@@ -1,0 +1,4 @@
+baseURL = "http://blog.hamiltonian.net/"
+languageCode = "en"
+title = "The Universal Cover"
+theme = "hamiltonian"
