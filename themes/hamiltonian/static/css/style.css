@@ -1,31 +1,56 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  border-top: 5px solid #BB0000;
   color: #111;
-  font-family: Arial;
+  font-family: Futura, Gill Sans, URW Gothic, Akkurat;
   font-size: 11;
   background-color: #f9f9f9;
 }
 
 header, main, footer {
-    max-width: 1300px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-right: auto;
-    margin-left: auto;  
-    background-color: white;
+  max-width: 1300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
-header {
-  display: box;
-  box-sizing: border-box;
-  background: #000 url("../img/map.png") no-repeat top left fixed;
-  background-size: 100%;
-  height: 5em;
+header > h1 {
+  padding: 1em 2em;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+header > a {
+  color: #111;
+}
+header > a:visited {
+  color: #111;
+}
+
+
+header > div {
+  width: 100%;
+  height: 7em;
+  border-top: 3px solid #616161;
+  background: #000 url("../img/map.png") no-repeat top left scroll;
+  background-size: 1300px auto;
+}
+
+
+main {
+  padding: 2em;
+  background-color: white;
+}
+
+footer {
+  height: 7em;
+  border-top: 3px solid #BB0000;
+  background: #616161 url("../img/footer.png") no-repeat scroll center top;
+  color: white;
 }
