@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ .Site.Title }}{{end}}</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    
+    <link rel="icon" href="{{ "img/icon/icon32.png" | relURL }}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ "img/icon/icon48.png" | relURL }}" sizes="48x48" type="image/png">
+    <link rel="icon" href="{{ "img/icon/icon64.png" | relURL }}" sizes="64x64" type="image/png">
+    <link rel="icon" href="{{ "img/icon/icon180.png" | relURL }}" sizes="180x180" type="image/png">
+    <link rel="icon" href="{{ "img/icon/icon.svg" | relURL }}" sizes="any" type="image/svg+xml">
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   </head>
 
   <body>
@@ -22,7 +31,12 @@
   </main>
 
   <footer>
-  {{ block "footer" . }}{{ end }}
+  {{ block "footer" . }}
+  <h2>{{ .Site.Title }}</h2>
+  <div>
+  Hier koennte ihre Beschreibung stehen.
+  </div>
+  {{ end }}
   </footer>
   
   </body>

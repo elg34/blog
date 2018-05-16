@@ -1,13 +1,17 @@
 {{ define "main" }}
 
+<h2>Latest Posts</h2>
+<div class="post-list">
 {{ range first 10 .Data.Pages }}
 <article>
-  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ .Summary }}
-  <a href="{{ .Permalink }}">Read the full article</a>
+  <a href="{{ .Permalink }}">Read more...</a>
 </article>
 {{ end }}
+</div>
 
-Muh!
+Subscribe via <a>RSS</a>.
 
 {{ end }}
