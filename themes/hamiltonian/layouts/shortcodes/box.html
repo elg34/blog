@@ -1,3 +1,7 @@
 <div class="box {{.Get 0}}">
-  {{.Inner}}
+{{ if .Get 1 }}
+  {{ (print "<span class=\"title\">" (.Get 1) ".</span> " .Inner) | markdownify}}
+{{ else }}
+  {{ (print "<span class=\"title\">" ( humanize (.Get 0) ) ".</span> " .Inner) | markdownify}}  
+{{ end }}
 </div>

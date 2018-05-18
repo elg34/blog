@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6, blockquote, pre, figure {
   margin: 0;
   padding: 0;
   font-weight:normal;
@@ -8,11 +8,11 @@ body {
   margin: 0;
   padding: 0;
   border-top: 5px solid #BB0000;
-  font-family: Fira Sans, Futura, Gill Sans, URW Gothic, Akkurat;
-  font-size: 11pt;
+  font-family: Fira Sans, sans;
+  font-size: 10pt;
   background-color: #f1f1f1;
 }
-header, main, footer {
+header, #wrapper, footer {
   max-width: 1000px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -25,7 +25,6 @@ a, a:visited {
 
 
 /* HEADER */
-
 header > h1 {
   padding: 0.6em 1em 0.5em 1.8em;
   margin: 0 0 0 0.6em;
@@ -50,24 +49,23 @@ header > div {
 
 
 /* MAIN */
-
 main {
-  padding: 1em 2em 3em 220px;
-  padding-left: 220px;
+  padding: 2em;
+  width: 80%;
+  margin-left: auto;
   background-color: white;
+  font-family: Fira Serif;
+  text-align: justify;
 }
 main h2 {
   font-size: 1.2em;
   margin-bottom:1em;
 }
 
+
 /* ARTICLE LIST */
-.post-list {
-  
-}
 .post-list article {
   margin-bottom: 3em;
-  font-family: Fira Serif;
 }
 .post-list h3 a {
   font-family: URW Gothic;
@@ -84,10 +82,17 @@ main h2 {
 }
 
 /* ARTICLE */
+article {
+  font-family: Fira Serif;
+}
 article p {
+  margin-top: 0;
   margin-bottom: 1em;
 }
-
+article h2 {
+  margin-bottom: 1em;
+  font-family: Fira Sans, sans-serif;
+}
 
 /* BOXES */
 .box {
@@ -101,12 +106,11 @@ article p {
 	.content>:last-child { margin-bottom: 0; }*/
 }
 
-.box>.title {
+.box .title {
   font-weight: bold;
   text-transform: capitalize;
 }
-
-.box>.reference {
+.box .reference {
   display: block;
   float: right;
   margin-left: -5em;
@@ -117,19 +121,15 @@ article p {
 .theorem {
   border-left: 5px solid purple;
   background-color: #fff0ff; }
-
 .proposition {
   border-left: 5px solid purple;
   background-color: #fff0ff; }
-
 .example {
   border-left: 5px solid darkgreen;
   background-color: #e4ffe4; }
-
 .definition {
   border-left: 5px solid #BB0000;
   background-color: #ffeeee; }
-
 .note {
   border-left: 5px solid darkblue;
   background-color: #e2e2ff; }
