@@ -7,7 +7,7 @@
   <span>{{ .Date.Format "Jan 2, 2006" }}</span>
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ .Summary }}
-  <a href="{{ .Permalink }}">Read more...</a>
+  {{ if .Truncated }}<a href="{{ .Permalink }}">Read more...</a>{{ end }}
 </article>
 {{ end }}
 </div>
