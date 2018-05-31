@@ -59,3 +59,32 @@ A Hasse diagram represets finite posets as a graph, allwoing for easy visualisat
 
 The vertices in a Hasse diagram are the elements of the poset  <span class="math">(P, \le)</span> and edges are drawn between vertices <span class="math">x, y \in P</span> if  <span class="math">(x \le y) \land (\nexists z \ne x,y \in P: x \le z \le y)</span>. The position of vertex y is then drawn higher up in the diagram than vertex x.
 
+## Special elements in ordered sets
+
+{{< box definition >}} Let <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">p \in P<\span> is called the **least element* of a  is given if <span class="math">\forall g \in P: p < g</span>. The **greatest element** is defined dually, as <span class="math">p \in P: p > g \forall g \in P </span>.
+{{< /box >}}
+
+Hasse diagram example
+
+{{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">s \in S<\span> is called the **minimal element** of S if <span class="math">s < g \forall g \in S </span>. Conversely, <span class="math">s \in S<\span> is called the **maximal element** if <span class="math">s > g \forall g \in S </span>.
+{{< /box >}}
+
+Hasse diagram example (and difference to least element)
+
+{{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">p \in P<\span> is called a **lower bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span>. <span class="math">p</span> is more specifically the **infimum** or **greatest lower bound** if <span class="math">p</span> is larger than all other lower bounds of <span class="math">S</span>.
+
+An element <span class="math">p \in P<\span> is then an **upper bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span> and the **supremum** or **least upper bound** is the upper bound that is smaller than any other upper bound.
+{{< /box >}}
+
+Note that several items can be upperlower bounds of a subset and that the bounds as well as the infimum/supremum do not need to be part of the subset.
+
+## Zorn's Lemma
+
+
+
