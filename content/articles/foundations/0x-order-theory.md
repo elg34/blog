@@ -63,7 +63,7 @@ The vertices in a Hasse diagram are the elements of the poset  <span class="math
 
 {{< box definition >}} Let <span class="math">(P, \le)</span> be a poset.
 
-An element <span class="math">p \in P<\span> is called the **least element* of a  is given if <span class="math">\forall g \in P: p < g</span>. The **greatest element** is defined dually, as <span class="math">p \in P: p > g \forall g \in P </span>.
+An element <span class="math">p \in P<\span> is called the **least element** if <span class="math">\forall g \in P: p < g</span>. The **greatest element** is defined dually, as <span class="math">p \in P: p > g \forall g \in P </span>.
 {{< /box >}}
 
 Hasse diagram example
