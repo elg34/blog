@@ -46,7 +46,7 @@ A **Poset** (partially ordered set) is a tuple <span class="math">(M, \le)</span
 {{< /box >}}
 
 {{< box definition >}}
-A **totally ordered set** is a poset where the relation <span class="math">\le</span> is additionally total.
+A **totally ordered set**/**chain** is a poset where the relation <span class="math">\le</span> is additionally total.
 {{< /box >}}
 
 {{< box definition >}}
