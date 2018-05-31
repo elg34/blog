@@ -9,9 +9,9 @@ In this example we are thus comparing two natural numbers, but the intuition of 
 
 Looking back at predicate logic (link), comparisons as the placement of people in a race can be evaluated with a binary outcome (TRUE or FALSE). If P is the set of people competing, and we look at the statement A(p1,p2) as "p1 finished the race later than p2" and say whether that statement holds true for a given pair of people p1 and p2 out of the competing racers.
 
-Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation "finished the race later", we could write p1 R p2.
+Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation R "finished the race later", we could write p1 R p2.
 
-To distinguish order relations from other types of binary relations, we first look at some of the different properties that relations can have, which will allow us to define different order relations.
+To distinguish order relations from other types of binary relations, we first look at some of the general properties of relations (ref to equivalence relation definition), which will allow us to define different order relations.
 
 ## Properties of relations
 
