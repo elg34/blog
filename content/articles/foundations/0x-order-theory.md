@@ -49,6 +49,8 @@ A **Poset** (partially ordered set) is a tuple <span class="math">(M, \le)</span
 A **totally ordered set** is a poset where the relation <span class="math">\le</span> is additionally total.
 {{< /box >}}
 
+Thus, a totally ordered set is a set where all elements are stand in relation.
+
 {{< box definition >}}
 A **strictly ordered set** is a tuple <span class="math">(M, <)</span> consisting of a set <span class="math">M</span> and a relation <span class="math"><</span> that is irreflexive, asymmetric and transitive.
 {{< /box >}}
