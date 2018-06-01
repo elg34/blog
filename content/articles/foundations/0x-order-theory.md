@@ -9,9 +9,9 @@ In this example we are thus comparing two natural numbers, but the intuition of 
 
 Looking back at predicate logic (link), comparisons as the placement of people in a race can be evaluated with a binary outcome (TRUE or FALSE). If P is the set of people competing, and we look at the statement A(p1,p2) as "p1 finished the race later than p2" and say whether that statement holds true for a given pair of people p1 and p2 out of the competing racers.
 
-Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation "finished the race later", we could write p1 R p2.
+Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation R "finished the race later", we could write p1 R p2.
 
-To distinguish order relations from other types of binary relations, we first look at some of the different properties that relations can have, which will allow us to define different order relations.
+To distinguish order relations from other types of binary relations, we first look at some of the general properties of relations (ref to equivalence relation definition), which will allow us to define different order relations.
 
 ## Properties of relations
 
@@ -46,7 +46,7 @@ A **Poset** (partially ordered set) is a tuple <span class="math">(M, \le)</span
 {{< /box >}}
 
 {{< box definition >}}
-A **totally ordered set** is a poset where the relation <span class="math">\le</span> is additionally total.
+A **totally ordered set**/**chain** is a poset where the relation <span class="math">\le</span> is additionally total.
 {{< /box >}}
 
 Thus, a totally ordered set is a set where all elements are stand in relation.
@@ -60,3 +60,31 @@ A **strictly ordered set** is a tuple <span class="math">(M, <)</span> consistin
 A Hasse diagram represets finite posets as a graph, allwoing for easy visualisations of the order structure imposed on the set.
 
 The vertices in a Hasse diagram are the elements of the poset  <span class="math">(P, \le)</span> and edges are drawn between vertices <span class="math">x, y \in P</span> if  <span class="math">(x \le y) \land (\nexists z \ne x,y \in P: x \le z \le y)</span>. The position of vertex y is then drawn higher up in the diagram than vertex x.
+
+## Special elements in ordered sets
+
+{{< box definition >}} Let <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">p \in P<\span> is called the **least element** if <span class="math">\forall g \in P: p < g</span>. The **greatest element** is defined dually, as <span class="math">p \in P: p > g \forall g \in P </span>.
+{{< /box >}}
+
+Hasse diagram example
+
+{{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">s \in S<\span> is called the **minimal element** of S if <span class="math">s < g \forall g \in S </span>. Conversely, <span class="math">s \in S<\span> is called the **maximal element** if <span class="math">s > g \forall g \in S </span>.
+{{< /box >}}
+
+Hasse diagram example (and difference to least element)
+
+{{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
+
+An element <span class="math">p \in P<\span> is called a **lower bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span>. <span class="math">p</span> is more specifically the **infimum** or **greatest lower bound** if <span class="math">p</span> is larger than all other lower bounds of <span class="math">S</span>.
+
+An element <span class="math">p \in P<\span> is then an **upper bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span> and the **supremum** or **least upper bound** is the upper bound that is smaller than any other upper bound.
+{{< /box >}}
+
+Note that several items can be upperlower bounds of a subset and that the bounds as well as the infimum/supremum do not need to be part of the subset.
+
+## Zorn's Lemma
+
