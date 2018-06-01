@@ -20,21 +20,21 @@ Let <span class="math">M</span> be a set and <span class="math">R</span> a binar
 
 Then R is
 
-* **reflexive** when <span class="math"> \forall x \in M: xRx</span>.
+* **reflexive** if <span class="math"> \forall x \in M: xRx</span>.
 
-* **irreflexive** when <span class="math"> \forall x \in M: \neg(xRx)</span>
+* **irreflexive** if <span class="math"> \forall x \in M: \neg(xRx)</span>
 
-* **symmetric** when <span class="math"> \forall x,y \in M: xRy \Leftrightarrow yRx</span>
+* **symmetric** if <span class="math"> \forall x,y \in M: xRy \Leftrightarrow yRx</span>
 
-* **antisymmetric** when <span class="math"> \forall x,y \in M: xRy \land yRx \Rightarrow x=y</span>
+* **antisymmetric** if <span class="math"> \forall x,y \in M: xRy \land yRx \Rightarrow x=y</span>
 
-* **asymmetric** when <span class="math"> \forall x,y \in M: xRy \Rightarrow \neg(yRx)</span>
+* **asymmetric** if <span class="math"> \forall x,y \in M: xRy \Rightarrow \neg(yRx)</span>
 
-* **transitive** when <span class="math"> \forall x,y,z \in M: xRy \land yRz \Rightarrow xRz</span>
+* **transitive** if <span class="math"> \forall x,y,z \in M: xRy \land yRz \Rightarrow xRz</span>
 
-* **trichotomous** when <span class="math"> \forall x,y \in M: xRy \oplus yRx \oplus x=y</span>
+* **trichotomous** if <span class="math"> \forall x,y \in M: xRy \oplus yRx \oplus x=y</span>
 
-* **total** when <span class="math"> \forall x,y \in M: xRy \lor yRx</span>
+* **total** if <span class="math"> \forall x,y \in M: xRy \lor yRx</span>
 
 {{< /box >}}
 
@@ -58,4 +58,3 @@ A **strictly ordered set** is a tuple <span class="math">(M, <)</span> consistin
 A Hasse diagram represets finite posets as a graph, allwoing for easy visualisations of the order structure imposed on the set.
 
 The vertices in a Hasse diagram are the elements of the poset  <span class="math">(P, \le)</span> and edges are drawn between vertices <span class="math">x, y \in P</span> if  <span class="math">(x \le y) \land (\nexists z \ne x,y \in P: x \le z \le y)</span>. The position of vertex y is then drawn higher up in the diagram than vertex x.
-
