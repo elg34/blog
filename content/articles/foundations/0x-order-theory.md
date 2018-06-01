@@ -20,21 +20,21 @@ Let <span class="math">M</span> be a set and <span class="math">R</span> a binar
 
 Then R is
 
-* **reflexive** when <span class="math"> \forall x \in M: xRx</span>.
+* **reflexive** if <span class="math"> \forall x \in M: xRx</span>.
 
-* **irreflexive** when <span class="math"> \forall x \in M: \neg(xRx)</span>
+* **irreflexive** if <span class="math"> \forall x \in M: \neg(xRx)</span>
 
-* **symmetric** when <span class="math"> \forall x,y \in M: xRy \Leftrightarrow yRx</span>
+* **symmetric** if <span class="math"> \forall x,y \in M: xRy \Leftrightarrow yRx</span>
 
-* **antisymmetric** when <span class="math"> \forall x,y \in M: xRy \land yRx \Rightarrow x=y</span>
+* **antisymmetric** if <span class="math"> \forall x,y \in M: xRy \land yRx \Rightarrow x=y</span>
 
-* **asymmetric** when <span class="math"> \forall x,y \in M: xRy \Rightarrow \neg(yRx)</span>
+* **asymmetric** if <span class="math"> \forall x,y \in M: xRy \Rightarrow \neg(yRx)</span>
 
-* **transitive** when <span class="math"> \forall x,y,z \in M: xRy \land yRz \Rightarrow xRz</span>
+* **transitive** if <span class="math"> \forall x,y,z \in M: xRy \land yRz \Rightarrow xRz</span>
 
-* **trichotomous** when <span class="math"> \forall x,y \in M: xRy \oplus yRx \oplus x=y</span>
+* **trichotomous** if <span class="math"> \forall x,y \in M: xRy \oplus yRx \oplus x=y</span>
 
-* **total** when <span class="math"> \forall x,y \in M: xRy \lor yRx</span>
+* **total** if <span class="math"> \forall x,y \in M: xRy \lor yRx</span>
 
 {{< /box >}}
 
@@ -48,6 +48,8 @@ A **Poset** (partially ordered set) is a tuple <span class="math">(M, \le)</span
 {{< box definition >}}
 A **totally ordered set**/**chain** is a poset where the relation <span class="math">\le</span> is additionally total.
 {{< /box >}}
+
+Thus, a totally ordered set is a set where all elements are stand in relation.
 
 {{< box definition >}}
 A **strictly ordered set** is a tuple <span class="math">(M, <)</span> consisting of a set <span class="math">M</span> and a relation <span class="math"><</span> that is irreflexive, asymmetric and transitive.
@@ -85,6 +87,4 @@ An element <span class="math">p \in P<\span> is then an **upper bound** of <span
 Note that several items can be upperlower bounds of a subset and that the bounds as well as the infimum/supremum do not need to be part of the subset.
 
 ## Zorn's Lemma
-
-
 
