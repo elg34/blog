@@ -65,26 +65,27 @@ The vertices in a Hasse diagram are the elements of the poset  <span class="math
 
 {{< box definition >}} Let <span class="math">(P, \le)</span> be a poset.
 
-An element <span class="math">p \in P<\span> is called the **least element** if <span class="math">\forall g \in P: p < g</span>. The **greatest element** is defined dually, as <span class="math">p \in P: p > g \forall g \in P </span>.
+An element <span class="math">p \in P</span> is called the **least element** if <span class="math">\forall g \in P: (p \le g) </span>. The **greatest element** is defined dually, as <span class="math">p \in P: (\forall g \in P: p \ge g) </span>.
+
 {{< /box >}}
 
 Hasse diagram example
 
 {{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
 
-An element <span class="math">s \in S<\span> is called the **minimal element** of S if <span class="math">s < g \forall g \in S </span>. Conversely, <span class="math">s \in S<\span> is called the **maximal element** if <span class="math">s > g \forall g \in S </span>.
+An element <span class="math">s \in S</span> is called the **minimal element** of S if <span class="math">\forall g \in S: s \le g </span>. Conversely, <span class="math">s \in S</span> is called the **maximal element** if <span class="math">\forall g \in S: s \ge g </span>.
 {{< /box >}}
 
 Hasse diagram example (and difference to least element)
 
 {{< box definition >}} Let <span class="math">S, P</span> be sets, <span class="math">S \subset P</span> and <span class="math">(P, \le)</span> be a poset.
 
-An element <span class="math">p \in P<\span> is called a **lower bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span>. <span class="math">p</span> is more specifically the **infimum** or **greatest lower bound** if <span class="math">p</span> is larger than all other lower bounds of <span class="math">S</span>.
+An element <span class="math">p \in P</span> is called a **lower bound** of <span class="math">S</span> when <span class="math">\forall s \in S: p \le s</span>. <span class="math">p</span> is more specifically the **infimum** or **greatest lower bound** if <span class="math">p</span> is larger than all other lower bounds of <span class="math">S</span>.
 
-An element <span class="math">p \in P<\span> is then an **upper bound** of <span class="math">S</span> when <span class="math">p \le s \forall s \in S<\span> and the **supremum** or **least upper bound** is the upper bound that is smaller than any other upper bound.
+An element <span class="math">p \in P</span> is then an **upper bound** of <span class="math">S</span> when <span class="math">\forall s \in S: p \le s</span> and the **supremum** or **least upper bound** is the upper bound that is smaller than any other upper bound.
 {{< /box >}}
 
-Note that several items can be upperlower bounds of a subset and that the bounds as well as the infimum/supremum do not need to be part of the subset.
+Note that several items can be upper/lower bounds of a subset and that the bounds as well as the infimum/supremum do not need to be part of the subset.
 
 ## Zorn's Lemma
 
