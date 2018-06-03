@@ -4,12 +4,11 @@ tags: [maths,foundations,order-theory]
 draft: true
 ---
 
-Comparing objects based on some relation is a basic operation. One might say that person A did better in a race than person B. In this comparison, we compare two people based on a property assigned to them - so if person A came first and person B was 3rd to finish the race, then really the comparison is between those numbers.
-In this example we are thus comparing two natural numbers, but the intuition of "order" extends very naturally to real, rational and whole numbers as well.
+Comparing objects based on some relation is a basic operation. One might say that person A did better in a race than person B. In this comparison, we compare two people based on a property assigned to them - so if person A came first and person B was 3rd to finish the race, then really the comparison is between those numbers. In this example we are thus comparing two natural numbers, but the intuition of "order" extends very naturally to real, rational and whole numbers as well.
 
-Looking back at predicate logic (link), comparisons as the placement of people in a race can be evaluated with a binary outcome (TRUE or FALSE). If P is the set of people competing, and we look at the statement A(p1,p2) as "p1 finished the race later than p2" and say whether that statement holds true for a given pair of people p1 and p2 out of the competing racers.
+Looking back at predicate logic (link), comparisons as the placement of people in a race can be evaluated with a binary outcome (TRUE or FALSE). If P is the set of people competing, and we look at the statement A(p1,p2) as "p1 finished the race later than p2" and say whether that statement holds true for a given pair of people p1 and p2 out of the competing racers. Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation R "finished the race later", we could write p1 R p2.
 
-Thus talking about ordering between objects, we are looking at a specific subset of binary relations. Rephrased with infix notation for the relation R "finished the race later", we could write p1 R p2.
+ In addition to the statement "A finished the race earlier than B", there is a natural duality in the statement "B finished the race later than A" and we get the inverse relation from swapping the order sign in this way.
 
 To distinguish order relations from other types of binary relations, we first look at some of the general properties of relations (ref to equivalence relation definition), which will allow us to define different order relations.
 
@@ -38,6 +37,7 @@ Then R is
 
 {{< /box >}}
 
+We have already seen a special relation that is defined through these properties, the equivalence relation.
 
 ## Order relations
 
@@ -89,3 +89,5 @@ Note that several items can be upper/lower bounds of a subset and that the bound
 
 ## Zorn's Lemma
 
+{{< box lemma >}} Let (P, \le) be a poset where every totally ordered subset has an upper bound. Then P contains at least one maximal element. 
+{{< /box >}}
